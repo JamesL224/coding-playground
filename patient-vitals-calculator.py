@@ -20,11 +20,13 @@ print("-" * 20) # A separator line for clarity
 # Let's convert the temperature from Fahrenheit to Celsius.
 # The formula is: C = (F - 32) * 5/9
 temperature_celsius = (body_temperature_f - 32) * (5/9)
+has_fever = body_temperature_f > 100.4
 
 print(f"Body Temperature (F): {body_temperature_f}°F")
 # We use :.2f to format the Celsius temperature to two decimal places for easier reading.
 print(f"Body Temperature (C): {temperature_celsius:.2f}°C")
 print("-" * 20)
+print(f"Does patient have a fever? {has_fever}")
 
 # --- Next Steps ---
 # Think about what other checks you could do!
